@@ -1,0 +1,41 @@
+
+  <div class="container">
+  <div class="card-table">
+   <div class="cart-product">
+     <table class="table table-responsive">
+       <thead>
+         <tr>
+           <th> n:</th>
+           <th> Product</th>
+           <th> img</th>
+           <th> description</th>
+           <th> price</th>
+           <th> quantity</th>
+
+           <th> action</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let film of movie; let i = index">
+           <td>{{i+1}}</td>
+           <td>{{film.poster_path}}</td>
+           <td><img src="" width="50vw"></td>
+
+           <td><button class="btn btn-danger" >elimina</button></td>
+         </tr>
+        </tbody>
+
+
+
+
+
+     </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

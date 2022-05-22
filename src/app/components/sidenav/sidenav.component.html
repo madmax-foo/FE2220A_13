@@ -1,0 +1,30 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Menu</p>
+    <a (click)="showFiller = !showFiller" mat-raised-button>
+      Movies
+    </a> &nbsp;
+
+    <a [routerLink]="[ '/favourites']" routerLinkActive="router-link-active"(click)="showFiller = !showFiller" mat-raised-button>
+      Preferiti
+    </a>
+
+    <a [routerLink]="[ '/login']" routerLinkActive="router-link-active" (click)="showFiller = !showFiller"  mat-raised-button>
+    LOGIN
+    </a>
+    <a [routerLink]="[ '/signup']" routerLinkActive="router-link-active" (click)="showFiller = !showFiller"  mat-raised-button>
+      REGISTRATI
+      </a>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <button type="button" style="background-color: white;" mat-button (click)="drawer.toggle()">
+      MENU
+    </button>
+
+
+  </div>
+</mat-drawer-container>
+
+

@@ -1,0 +1,27 @@
+<div class="head">
+HOME CINEMA
+</div>
+<div class="container ">
+  <app-sidenav></app-sidenav>
+
+
+    <mat-card class="example-card" *ngFor="let film of films; let i = index">
+
+            <img
+                mat-card-image
+                [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path" >
+
+                <mat-card-content>
+
+
+                </mat-card-content>
+                <mat-card-actions class="action">
+
+                  <button [ngClass]="{'test': newColor}" (click)="addFav(film)" mat-mini-fab><mat-icon style="color: white;">favorite</mat-icon></button>
+
+
+
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
